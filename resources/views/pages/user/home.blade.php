@@ -11,8 +11,7 @@
                     We need your help.
                 </h1>
                 <p class="text-white sub-head">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
-                    or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                    Kami akan membantu anda untuk menemukan kucing kesayangan anda
                 </p>
                 <a href="#cardCats" class="primary-btn header-btn text-uppercase">Find A Cat To Adopt</a>
                 <a href="#fillDonatesCats" class="primary-btn header-btn text-uppercase">Donate A Cat</a>
@@ -95,7 +94,7 @@
             
             <div class="col-lg-3 col-md-6">
                 <div class="list-bg">
-                    <img src="{{ $item->galleries()->where('kucing_id', '=' , $item->id)->first()->photo }}" width="100%">
+                    <img class="overflow-hidden" src="{{ $item->galleries()->where('kucing_id', '=' , $item->id)->first()->photo }}" width="100%" height="100%">
                 </div>
                 <div class=" listing__item">
                     <div class="listing__item__pic set-bg">

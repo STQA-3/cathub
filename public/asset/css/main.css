@@ -6,6 +6,17 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
+.active-image-carusel{
+      display: grid;
+     
+}
+.single-image-carusel{
+      margin: 5px;
+      
+}
+
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #fab700;
