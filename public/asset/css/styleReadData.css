@@ -90,8 +90,9 @@
 }
 
 .listing__item__pic {
-    height: 260px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .listing__item__pic img {

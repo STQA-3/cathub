@@ -27,7 +27,6 @@
                 <th>Deskripsi</th>
                 <th>Status</th>
                 <th>Approval</th>
-                <th>Photo</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -41,15 +40,15 @@
                   <td>{{ $item->deskripsi }}</td>
                   <td>{{ $item->is_adopted ? 'Adopted' : 'Available' }}</td>
                   <td>{{ $item->is_approved ? 'Approved' : 'Not Approved' }}</td>
-                  <td>
+                  {{-- <td>
                     <img src="{{ $item->galleries()->where('kucing_id', '=' , $item->id)->first()->photo }}" alt="" width="30%">
-                  </td>
+                  </td> --}}
                   <td>
                     <div class="row justify-content-center">
                       <a href="{{ route('admin.edit', $item->id)}}" class="btn btn-info mx-3"><i class="fas fa-pencil-alt"
                           aria-hidden="true"></i>
                       </a>
-                      
+
                       <form action="{{ route('admin.destroy', $item->id) }}" method="POST"
                         class="d-inline">
                         @csrf

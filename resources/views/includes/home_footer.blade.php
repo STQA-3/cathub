@@ -6,7 +6,7 @@
                 <div class="single-footer-widget">
                     <h6>About Us</h6>
                     <p>
-                        Few would argue that, despite the advanc ements off eminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Kucing, dalam bahasa latinnya Felis silvestris catus, adalah hewan karnivora. Kucing telah berbaur dengan kehidupan manusia paling tidak sejak 6.000 tahun SM, dari kerangka kucing di Pulau Siprus. Orang Mesir Kuno dari 3.500 SM telah menggunakan kucing untuk menjauhkan tikus atau hewan pengerat lain dari lumbung penyimpan hasil panen.
                     </p>
                 </div>
             </div>
@@ -19,11 +19,6 @@
                             <li><a href="#">Service</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Case Study</a></li>
-                        </ul>
-                        <ul class="col footer-nav">
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +43,7 @@
                                 <span class="lnr lnr-phone-handset"></span>
                             </div>
                             <div class="detail">
-                                <h4>081xxxxx</h4>
+                                <h4>081221565331</h4>
                                 <p>
                                     Monday to Friday 9 AM to 6 PM
                                 </p>
@@ -74,18 +69,8 @@
         <div class="container">
             <div class="row footer-bottom d-flex justify-content-between">
                 <p class="col-lg-8 col-sm-6 footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Re-edit By Cathub Developer
-                    <br>
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
-                    This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> By AnggaWikaNugraha
                 </p>
-                <div class="col-lg-4 col-sm-6 footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
-                </div>
             </div>
         </div>
     </div>

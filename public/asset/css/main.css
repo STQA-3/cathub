@@ -4,16 +4,16 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  Basic Style
 /* =================================== */
 
 .active-image-carusel{
       display: grid;
-     
+
 }
 .single-image-carusel{
       margin: 5px;
-      
+
 }
 
 
@@ -52,6 +52,10 @@
   /* Internet Explorer 10-11 */
   color: #777777;
   font-weight: 300;
+}
+
+html{
+    scroll-behavior: smooth !important;
 }
 
 ::-ms-input-placeholder {
@@ -2340,7 +2344,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-area {
   background: url(../img/banner-bg.jpg) center;
+  height: 100%;
   background-size: cover;
+
+  /* cara bikin paralax */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner-area .primary-btn {

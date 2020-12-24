@@ -8,21 +8,19 @@
             <div class="menu-content pb-60 col-lg-9">
                 <div class="title text-center">
                     <h1 class="mb-20">Want to help? Become a Volunteer</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor.</p>
+                    <p>satu langkah lagi anda jadi pahlawan kucing sejati</p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <form action="{{ route('home.store_pic')}}" method="POST" enctype="multipart/form-data">
                 @csrf
-        
+
                 <div>
-                  <input 
+                  <input
                   style="display:none"
                     type="text"
-                    name="kucing_id" 
+                    name="kucing_id"
                     value="{{ $kucing_id }}"
                     id=" kucing_id"
                     placeholder="Masukkan Jenis Kucing" required>
@@ -31,19 +29,19 @@
                 {{-- photo --}}
                 <div class="form-group">
                   <label for="photo">Photo</label>
-                  <input 
+                  <input
                     type="file"
-                    name="photo" 
+                    name="photo"
                     value="{{ old('photo') }}"
                     accept="image/*"
                     class="form-control-file @error('photo') is-invalid @enderror"
                     id="photo" required>
                 </div>
-        
+
                 <div class="form-group">
                   <button type="submit" class="mt-5 btn btn-primary btn-block">Submit</button>
                 </div>
-        
+
               </form>
         </div>
     </div>
