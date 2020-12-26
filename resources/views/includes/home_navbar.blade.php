@@ -24,12 +24,21 @@
 
                         @auth
                         <!-- Desktop Button -->
-                        <form class="form-inline text-white " action="{{ route('admin.dashboard') }}" method="GET">
-                            @csrf
-                            <button class="btn btn-login btn-navbar-right " type="submit">
-                                Admin
+                        <div class="d-flex">
+                            <form class="form-inline" action="{{ route('admin.dashboard') }}" method="GET">
+                                @csrf
+                                <button style="margin-top: -7px; color: white" class="btn btn-login btn-navbar-right " type="submit">
+                                    Admin
+                                </button>
+                            </form>
+                            <button style="margin-top: -7px; color: white" class="btn" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                log out
                             </button>
-                        </form>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
                         @endauth
                     </li>
                 </ul>
