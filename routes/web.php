@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,7 +23,8 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/{item}', 'HomeController@show')->name('kucing');
+Route::get('/kucing/{item}', 'HomeController@show')->name('kucing-detail');
+Route::post("/homeKucing/{id}", "HomeController@storeKucing")->name("homeKucing");
 
 
 Route::get('/donate', 'HomeController@create');

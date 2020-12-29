@@ -99,5 +99,15 @@ class HomeController extends Controller
     {
         return view('pages.user.kucing',compact('item'));
     }
+    // public function storeKucing(KucingRequest $request, $id)
+    // {
+    //     $data = $request->all();
+
+    //     $item = Kucing::findorfail($id);
+
+    //     $item->update($data);
+
+    //     return redirect()->route('admin.index');
+    // }
 
 }

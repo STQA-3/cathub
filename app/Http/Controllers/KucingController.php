@@ -52,7 +52,7 @@ class KucingController extends Controller
 
         $getdata = Kucing::create($data);
         $kucing_id = $getdata->id;
-        
+
 
         return redirect()->route('kucing-galleries.create')->with([
             'kucing_id' => $kucing_id

@@ -56,7 +56,7 @@
 
                             <p class="card-text" style="font-size: 13px">{{ $item->deskripsi }}</p>
                         </div>
-                        <a href="/{{$item->id }}" class="listing__item__text__info__right">
+                        <a href="/kucing/{{$item->id }}" class="listing__item__text__info__right">
                         Lihat Detail
                     </a>
                     </div>
