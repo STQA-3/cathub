@@ -48,14 +48,15 @@
                     <div class="listing__item__pic set-bg">
                         <div class="listing__item__pic__tag">{{ $item->is_adopted ? 'Adopted' : 'Available'  }}</div>
                     </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-between">
+                        <div>
+                            <h4 class="card-title">{{ $item->jenis_kucing }}</h4>
+                            <hr/>
+                            <h6 class="card-title">{{ $item->jenis_kelamin }}</h6>
 
-                    <div class="card-body">
-                        <h4 class="card-title">{{ $item->jenis_kucing }}</h4>
-                        <hr/>
-                        <h6 class="card-title">{{ $item->jenis_kelamin }}</h6>
-
-                      <p class="card-text">{{ $item->deskripsi }}</p>
-                      <a href="" class="listing__item__text__info__right">
+                            <p class="card-text" style="font-size: 13px">{{ $item->deskripsi }}</p>
+                        </div>
+                        <a href="/{{$item->id }}" class="listing__item__text__info__right">
                         Lihat Detail
                     </a>
                     </div>

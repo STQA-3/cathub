@@ -17,7 +17,7 @@
                         <form class="form-inline">
                             <button style="margin-top: -7px; color: white" class="btn btn-login btn-navbar-right" type="button"
                                 onclick="event.preventDefault(); location.href='{{ url('login')}}';">
-                                Login
+                                Admin
                             </button>
                         </form>
                         @endguest

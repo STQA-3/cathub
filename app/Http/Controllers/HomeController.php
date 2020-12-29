@@ -17,7 +17,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    
+
 
     /**
      * Show the application dashboard.
@@ -37,7 +37,7 @@ class HomeController extends Controller
     {
         return view('pages.admin.index');
     }
-    
+
     public function dashboard()
     {
         $total_kucing_belum_adopsi = Kucing::where('is_adopted','0')->count();
@@ -66,7 +66,7 @@ class HomeController extends Controller
 
         $getdata = Kucing::create($data);
         $kucing_id = $getdata->id;
-        
+
 
         return redirect()->route('home.create_pic')->with([
             'kucing_id' => $kucing_id
@@ -87,10 +87,17 @@ class HomeController extends Controller
     {
         $data = $request->all();
         $data['photo'] = $request->file('photo')->store(
-            'assets/kucing', 'public'  
+            'assets/kucing', 'public'
         );
 
         KucingGallery::create($data);
         return redirect()->route('home');
     }
+
+    // untuk menampilkan data kucing
+    public function show(Kucing $item)
+    {
+        return view('pages.user.kucing',compact('item'));
+    }
+
 }
