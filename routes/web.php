@@ -33,7 +33,7 @@ Route::get('/donate/pic', 'HomeController@create_pic')->name('home.create_pic');
 Route::post('/donate/pic/store', 'HomeController@store_pic')->name('home.store_pic');
 
 
-Route::get('/admin/dashboard', 'HomeController@dashboard')->name('admin.dashboard');
+Route::get('/admin/dashboard', 'HomeController@dashboard')->middleware(['auth', 'admin'])->name('admin.dashboard');
 Route::get('/admin/index', 'HomeController@indexadmin');
 
 
