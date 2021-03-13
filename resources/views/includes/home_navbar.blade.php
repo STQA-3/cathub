@@ -15,8 +15,8 @@
                         @guest
                         <!-- Desktop Button -->
                         <form class="form-inline">
-                            <button style="margin-top: -7px; color: white" class="btn btn-login btn-navbar-right" type="button"
-                                onclick="event.preventDefault(); location.href='{{ url('login')}}';">
+                            <button style="margin-top: -7px; color: white" class="btn btn-login btn-navbar-right"
+                                type="button" onclick="event.preventDefault(); location.href='{{ url('login')}}';">
                                 Login
                             </button>
                         </form>
@@ -27,11 +27,13 @@
                         <div class="d-flex">
                             <form class="form-inline" action="{{ route('admin.dashboard') }}" method="GET">
                                 @csrf
-                                <button style="margin-top: -7px; color: white" class="btn btn-login btn-navbar-right " type="submit">
+                                <button style="margin-top: -7px; color: white" class="btn btn-login btn-navbar-right "
+                                    type="submit">
                                     Admin
                                 </button>
                             </form>
-                            <button style="margin-top: -7px; color: white" class="btn" href="{{ route('logout') }}" onclick="event.preventDefault();
+                            <button style="margin-top: -7px; color: white" class="btn" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                                 log out
                             </button>
